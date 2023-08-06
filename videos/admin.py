@@ -16,7 +16,7 @@ class VideoAdmin(SummernoteModelAdmin):
     summernote_fields = '__all__'
     
 class MyModelAdmin(AdminVideoMixin, admin.ModelAdmin):
-    pass
+    list_display = ['title']
 
 
 admin.site.register(Comment, VideoAdmin )
